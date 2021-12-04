@@ -1,0 +1,10 @@
+version: "3.1"
+
+services:
+  test-cloud-vision-api-google:
+    image: test-cloud-vision-api-google
+    build: .
+    command: python main.py
+    # command: ls
+    volumes:
+      - .:/opt/code
